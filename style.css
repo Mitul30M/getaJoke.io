@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    color: #000000;
+    /* background-color: #000000; */
+    overflow: hidden;
+}
+
+#frame {
+    margin: auto;
+    max-width: 1440px;
+    max-height: 1024px;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 25.0625rem;
+    background: #ffffff;
+
+
+}
+
+.main {
+
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 15rem;
+
+}
+
+
+h1 {
+    width: 51rem;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 8.4rem */
+}
+
+button {
+    color: #000000;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 2.4375rem */
+    padding: 1.5625rem 4.3125rem;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0px 36px 72px 0px rgba(0, 0, 0, 0.24);
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+#joke {
+
+    margin: auto;
+    z-index: 4;
+    display: flex;
+    padding: 4.3125rem 4.9375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5.3125rem;
+    background-color: transparent;
+    border-radius: 24px;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(25px);
+
+}
+
+.onhover:hover {
+    cursor: pointer;
+}
+
+#joke>p {
+
+    width: 31.625rem;
+    color: #000000;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 2.4375rem */
+}
+
+#joke>svg {
+    width: 1.56863rem;
+    height: 1.54063rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* card animations  */
+
+@keyframes riseUp {
+
+    from {
+        transform: translateY(20rem);
+    }
+
+    to {
+        transform: translateY(-36rem);
+    }
+
+
+}
+
+@keyframes riseDown {
+    from {
+        transform: translateY(-36rem);
+    }
+
+    to {
+        transform: translateY(20rem);
+    }
+}
+
+.popup {
+
+    animation: riseUp 750ms cubic-bezier(.68, -0.6, .39, 1.42) forwards;
+}
+
+.popdown {
+    animation: riseDown 750ms cubic-bezier(0.68, -0.6, 0.39, 1.42) forwards;
+}
